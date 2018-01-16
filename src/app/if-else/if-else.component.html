@@ -1,0 +1,14 @@
+<h1>New Feature of Angular 4</h1>
+<h2>ngIf... else..</h2>
+<ng-template #green>
+  <h3 [style.color]="color">Green(Else Part)</h3>
+  <p>this is else test</p>
+</ng-template>
+
+<h3 *ngIf="color === 'blue' ; else green" [style.color]="color">
+  Blue(If part)
+</h3>
+
+<div>
+  <button class="btn btn-primary" type="button" (click)="onToggle()">Toggle</button>
+</div>

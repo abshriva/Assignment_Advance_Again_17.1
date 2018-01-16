@@ -1,0 +1,4 @@
+<h1>NgFor as & Title case pipe example</h1>
+<p *ngFor ="let line of lines; index as i; count as c">
+ Line{{i+1}} of {{c}} => {{line | titlecase}}
+</p>
